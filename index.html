@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Sania Irshad — CASPAM Math | Portfolio" />
+  <title>Sania Irshad | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- 3D background canvas -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- Top nav -->
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Go to top">
+      <span class="logo-dot"></span> Sania
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span class="sr-only">Toggle menu</span>
+        <span class="burger"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a class="btn small" href="https://github.com/Sania1125" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top" class="main">
+    <!-- HERO -->
+    <section class="section hero">
+      <div class="hero-content">
+        <p class="pill reveal">CASPAM · Math Department</p>
+
+        <h1 class="reveal">
+          Hi, I’m <span class="grad">Sania Irshad</span> ✨
+        </h1>
+
+        <p class="lead reveal">
+          I build clean websites with GitHub, do data analysis, write content, and work confidently with MS Office.
+          I also have basic chatbot skills and I’m actively leveling up Excel for finance.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+
+        <div class="quick reveal" role="list" aria-label="Highlights">
+          <div class="quick-card" role="listitem">
+            <span class="quick-k">GitHub</span>
+            <a class="quick-v" href="https://github.com/Sania1125" target="_blank" rel="noreferrer">@Sania1125</a>
+          </div>
+          <div class="quick-card" role="listitem">
+            <span class="quick-k">Focus</span>
+            <span class="quick-v">Web · Data · Excel</span>
+          </div>
+          <div class="quick-card" role="listitem">
+            <span class="quick-k">Open to</span>
+            <span class="quick-v">Internships</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-glass reveal" aria-hidden="true">
+        <div class="glass-card">
+          <div class="glass-title">Portfolio Mode</div>
+          <div class="glass-sub">Interactive 3D + Depth</div>
+          <div class="glass-badges">
+            <span>Responsive</span>
+            <span>Fast</span>
+            <span>Accessible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p>
+          Student at CASPAM (Math Department). I enjoy building useful projects, collaborating in teams,
+          and creating clean documentation & content. I was also a member of the department welfare society.
+        </p>
+      </div>
+
+      <div class="grid two">
+        <article class="card reveal">
+          <h3>What I do</h3>
+          <ul class="list">
+            <li>Website development & deployment with GitHub</li>
+            <li>Data analysis & reporting</li>
+            <li>Content writing</li>
+            <li>MS Office expert (Word, PowerPoint, Excel)</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3>Currently learning</h3>
+          <ul class="list">
+            <li>Excel for finance (advanced formulas, dashboards)</li>
+            <li>Chatbot building (basics + practice projects)</li>
+            <li>Better UI/UX and performance optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p>A quick overview of what I can help teams build and deliver.</p>
+      </div>
+
+      <div class="chips reveal" aria-label="Skills list">
+        <span class="chip">Website building (GitHub)</span>
+        <span class="chip">Responsive UI</span>
+        <span class="chip">Data Analysis</span>
+        <span class="chip">MS Office Expert</span>
+        <span class="chip">Content Writing</span>
+        <span class="chip">Teamwork</span>
+        <span class="chip">Chatbots (Basics)</span>
+        <span class="chip">Excel for Finance (Learning)</span>
+      </div>
+
+      <div class="meter-wrap reveal">
+        <div class="meter">
+          <div class="meter-row">
+            <span>Web / GitHub</span>
+            <span class="meter-val" style="--w: 82%"></span>
+          </div>
+          <div class="meter-row">
+            <span>MS Office</span>
+            <span class="meter-val" style="--w: 90%"></span>
+          </div>
+          <div class="meter-row">
+            <span>Data Analysis</span>
+            <span class="meter-val" style="--w: 75%"></span>
+          </div>
+          <div class="meter-row">
+            <span>Excel (Finance Path)</span>
+            <span class="meter-val" style="--w: 60%"></span>
+          </div>
+        </div>
+        <p class="hint">Note: Skill bars are a visual summary — you can edit them anytime.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p>Selected work hosted on GitHub. (Project titles shown without username prefixes.)</p>
+      </div>
+
+      <div class="toolbar reveal">
+        <input id="projectSearch" class="search" type="search" placeholder="Search projects…" aria-label="Search projects" />
+        <div class="toolbar-actions">
+          <button class="btn small ghost" id="sortBtn" type="button">Sort A→Z</button>
+          <a class="btn small" href="https://github.com/Sania1125?tab=repositories" target="_blank" rel="noreferrer">
+            All Repos
+          </a>
+        </div>
+      </div>
+
+      <div class="projects" id="projectGrid" aria-label="Project list">
+        <!-- Cards injected by JS -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <h2>Contact</h2>
+        <p>If you’re hiring interns or want to collaborate, feel free to reach out.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card reveal">
+          <h3>Links</h3>
+          <div class="contact-list">
+            <a class="contact-item" href="https://github.com/Sania1125" target="_blank" rel="noreferrer">
+              <span>GitHub</span>
+              <span class="muted">github.com/Sania1125</span>
+            </a>
+            <a class="contact-item" href="mailto:saniairshad110@gmail.com">
+              <span>Email</span>
+              <span class="muted">saniairshad110@gmail.com</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <h3>Short message template</h3>
+          <p class="muted">
+            “Hello, I’m Sania Irshad (CASPAM, Math). I’m interested in an internship opportunity.
+            Here is my portfolio and GitHub. Thank you!”
+          </p>
+          <div class="hero-cta">
+            <a class="btn ghost" href="mailto:saniairshad110@gmail.com?subject=Internship%20Inquiry%20-%20Sania%20Irshad&body=Hello%2C%0A%0AI%E2%80%99m%20Sania%20Irshad%20(CASPAM%2C%20Math).%20I%E2%80%99m%20interested%20in%20an%20internship%20opportunity.%0A%0AMy%20portfolio%3A%20(attach%20link)%0AMy%20GitHub%3A%20https%3A%2F%2Fgithub.com%2FSania1125%0A%0AThank%20you!%0A">
+              Email Me
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Sania Irshad · Built for internships</p>
+    </footer>
+  </main>
+
+  <!-- Three.js (CDN) -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
